@@ -22,6 +22,6 @@ while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("")
 	print("")
-	sys.stdout.write(f"\r[+] Sending request...   [----------] 0% {progressBar()}")
+	sys.stdout.write(f"\r{progressBar()}")
 	sys.stdout.flush()
 	break
