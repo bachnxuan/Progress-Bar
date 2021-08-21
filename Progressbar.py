@@ -15,7 +15,7 @@ def progressBar():
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] Request completed... [>>>>>>>>>>] 100%")
+			sys.stdout.write("\r[+] Download Complete [>>>>>>>>>>] 100%")
 			break
 
 while True:
@@ -25,3 +25,5 @@ while True:
 	sys.stdout.write(f"\r{progressBar()}")
 	sys.stdout.flush()
 	break
+	
+os.system('cls' if os.name == 'nt' else 'clear')
